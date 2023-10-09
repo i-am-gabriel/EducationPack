@@ -1,0 +1,163 @@
+
+body {
+    font-size: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.15em;
+    background-color: #1a82b3;
+}
+
+
+#page {
+    max-width: 940px;
+    min-width: 720px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border: 4px double #000;
+    background-color: #ffffff;
+}
+
+/* 
+EXAMPLE IMPLEMENTATION: 
+    > Give the element with id="logo_image"
+        > a height of 90px
+        > a width of 90px
+
+Reference Link: https://www.w3schools.com/cssref/pr_dim_height.asp
+Reference Link: https://www.w3schools.com/cssref/pr_dim_width.asp
+*/
+#logo_image{
+    height: 90px;
+    width: 90px;
+}
+
+/* 
+TODO: 
+    > Give the element with id="logo"
+        > display should be set to flex
+        > a height of 120px
+        > a width of 100%
+        > flex-direction should be set to column
+        > justify-content should be set to center
+        > text-align should be set to center
+        > algin-items should also be set to center
+
+Reference Link: https://www.w3schools.com/cssref/pr_dim_height.asp
+Reference Link: https://www.w3schools.com/cssref/pr_dim_width.asp
+Reference Link: https://www.w3schools.com/cssref/pr_class_display.asp
+Reference Link: https://www.w3schools.com/cssref/css3_pr_flex-direction.asp
+Reference Link: https://www.w3schools.com/cssref/css3_pr_justify-content.asp
+Reference Link: https://www.w3schools.com/cssref/pr_text_text-align.asp
+*/
+#logo {
+    /* YOUR CODE STARTS HERE */
+    display: flex;
+    height: 120px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* YOUR CODE END HERE */
+}
+
+#article {
+    display:flex;
+    /* set flex-dir to row */
+    flex-direction: row;
+}
+
+/*
+TODO: 
+add the below styles
+
+    > Give the element with class="span_display"
+        > width of 600px
+        > display should be set to flex
+        > and justify-content should be set to space-around
+        > flex-wrap should be set to nowrap
+
+Reference Link: https://www.w3schools.com/cssref/pr_class_display.php        
+*/
+.span_display{
+    /* YOUR CODE STARTS HERE */
+    width: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* YOUR CODE END HERE */
+}
+
+/* 
+TODO: 
+add the below styles
+
+    > Give the element with id="article_sect"
+        > A center text alignment to place text in the middle
+        > padding with value 10px
+
+Reference Link: https://www.w3schools.com/cssref/pr_text_text-align.php
+*/
+#article_sect{
+    /* YOUR CODE STARTS HERE */
+    text-align: center;
+    padding: 10px;
+    
+    /* YOUR CODE END HERE */
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#article_main{
+    width: 70%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+ul {
+    width: 570px;
+    padding: 15px;
+    margin: 0px auto 0px auto;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+/*
+TODO: 
+add the below styles
+
+    > Give the element li
+            > display should be set to inline
+        
+Reference Link: https://www.w3schools.com/cssref/pr_class_display.php            
+*/
+li {
+    /* YOUR CODE STARTS HERE */
+
+    display: inline;
+    /* YOUR CODE END HERE */
+    margin: 0px 3px;
+}
+
+.wide_paragraph {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+    margin: 20px auto 20px auto;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+a {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px 5px 18px;
+}
+
+a:hover,
+a.on {
+    color: #cc3333;
+    background-color: #ffffff;
+}
